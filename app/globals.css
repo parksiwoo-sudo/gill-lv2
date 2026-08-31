@@ -24,3 +24,146 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.result-page {
+  min-height: 100vh;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+  margin-bottom: 12px;
+}
+
+.result-header h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.overview {
+  max-width: 600px;
+  margin: 20px auto 0;
+  line-height: 1.7;
+  opacity: 0.65;
+}
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stage-card {
+  padding: 28px;
+  border: 1px solid #333;
+  border-radius: 16px;
+  background: #181818;
+}
+
+.stage-number {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.stage-card h2 {
+  font-size: 24px;
+  margin: 8px 0 12px;
+}
+
+.stage-summary {
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.skill {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #292929;
+  font-size: 13px;
+}
+.goal-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.goal-form {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.goal-logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  margin-bottom: 48px;
+}
+
+.goal-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.goal-form h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.goal-description {
+  margin-top: 16px;
+  opacity: 0.6;
+}
+
+.goal-input-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.goal-input-wrapper input {
+  flex: 1;
+  padding: 16px 18px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #181818;
+  color: white;
+  font-size: 16px;
+}
+
+.goal-input-wrapper button {
+  width: 56px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+}

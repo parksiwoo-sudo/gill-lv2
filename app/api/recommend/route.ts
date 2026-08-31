@@ -109,9 +109,7 @@ const SystemPrompt = `
         )
         
         console.log("Status:", openaiResponse.status);
-        console.log(apikey.length);
-        console.log(apikey.slice(0,20));
-        console.log(apikey.slice(-10));
+        
 
         if(!openaiResponse.ok){
             const errorBody= await openaiResponse.text();

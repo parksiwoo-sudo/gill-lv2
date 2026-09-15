@@ -1,9 +1,16 @@
-import { GoalForm } from "../component/GoalForm";
+import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main>
-      <GoalForm />
-    </main>
-  );
+export default async function Home() {
+  const supabase = await createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (user) {
+    redirect("/roadmap");
+  }
+
+  redirect("/login");
 }

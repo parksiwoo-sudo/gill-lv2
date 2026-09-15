@@ -11,7 +11,7 @@ export function GoalForm(){
         const trimmedInput = input.trim()
         if (!trimmedInput) return;
         
-        const response= await fetch("/api/recommend",{
+        const response= await fetch("/api/roadmap",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Roadmap } from "@/types/roadmap";
+import type { Roadmap } from "@/types/roadmap-schema";
 
 export default function ResultForm() {
   const [roadmap, setRoadmap] = useState<Roadmap | null>(null);
@@ -29,28 +29,24 @@ export default function ResultForm() {
 
         <h1>{roadmap.career}</h1>
 
-        <p className="overview">
-          {roadmap.overview}
-        </p>
+        
       </header>
 
       <section className="roadmap">
         {roadmap.stages.map((stage) => (
-          <article className="stage-card" key={stage.id}>
-            <p className="stage-number">
-              STEP {String(stage.id).padStart(2, "0")}
-            </p>
+         <article className="stage-card" key={stage.order_index}>
+         <p className="stage-number">
+           STEP {String(stage.order_index).padStart(2, "0")}
+         </p>
 
-            <h2>{stage.title}</h2>
+            <h2>{stage.name}</h2>
 
-            <p className="stage-summary">
-              {stage.summary}
-            </p>
+            
 
-            <div className="skills">
-              {stage.skills.map((skill) => (
-                <span className="skill" key={skill}>
-                  {skill}
+            <div className="items">
+              {stage.items.map((item) => (
+                <span className="item" key={item.name}>
+                  {item.name}
                 </span>
               ))}
             </div>
